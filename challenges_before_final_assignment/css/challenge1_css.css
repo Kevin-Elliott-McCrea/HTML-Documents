@@ -1,0 +1,21 @@
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+    background-color: aqua;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-above {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}

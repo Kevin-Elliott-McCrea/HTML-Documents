@@ -1,0 +1,15 @@
+.navbar {
+    overflow: hidden;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-text {
+    color: orange;
+}
+
+.navbar a:hover {
+    color: blueviolet;
+}

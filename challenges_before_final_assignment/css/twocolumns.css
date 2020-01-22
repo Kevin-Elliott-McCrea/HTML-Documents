@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 10%;
+    color: blueviolet;
+    height: 40%;
+    width: 5%;
+}
