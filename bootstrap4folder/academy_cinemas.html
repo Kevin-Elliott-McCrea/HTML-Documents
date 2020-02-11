@@ -44,9 +44,14 @@
         <div class="container">
           <h1 class="display-4 text-light">The Academy Cinemas</h1>
           <p class="lead">Sit back, relax, and enjoy the show...</p>
+          <!-- movie deals -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+          <!-- end movie deals -->
         </div>
       </div>
       <!-- END BIG TOP BOX -->
+
+      
 
       <div class="container">
         <div class="row">
@@ -143,17 +148,87 @@
 
       <!-- /showtimes -->
 
-
+      <!-- signup -->
       <div id="deals" class="text-center">
         <form>
           <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
           <div class"" class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           </div class"">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">
+            Sign up!
+          </button>
         </form>
       </div>
+      <!-- End sign up -->
 
+      <!-- form modal -->
+      <div class="modal fade" id="register"> <!-- MODAL -> MODAL-FADE -->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end form modal -->
+
+      <!-- About -->
+      <div id="about"></div>
+        <h4 style="font-weight: bold;">About:</h4><br>
+        <p class="mb-3">I created this website because someone in my family did something really cool and I wanted to do something really cool so here it is!</p>
+      </div>
+      <!-- End About -->
+      
+      <!-- Added bootstrap element -->
+      <div class="dropdown" style="float: right; margin: 1.33em;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Learn more
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Upcoming movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Community</a>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- footer -->
       <div class="container my-5">
         <ul class="nav nav-inline">
           <li class="nav-item">
@@ -170,12 +245,7 @@
           </li>
         </ul>
       </div>
-
-      <div id="about">
-        <h4 style="strong">About:</h4><br>
-        <p class="mb-3">I created this website because someone in my family did something really cool and I wanted to do something really cool so here it is!</p>
-      </div>
-
+      <!-- end footer -->
 
     </div>
 
@@ -184,5 +254,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>
