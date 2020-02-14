@@ -7,7 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+  <style>  
+    #sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: aquamarine;
+      padding: 50px;
+      font-size: 20px;
+    }
+  </style>
     <title>Academy Cinemas</title>
   </head>
   <body>
@@ -62,14 +71,13 @@
 
           </div>
           <div class="col-sm">
-          
+
             <h3>Accomodations</h3>
             <p>Awesome text about how incredible this product is! Awesome text about how incredible this product is!</p>
             <p>Awesome text about how incredible this product is! Awesome text about how incredible this product is!</p>
             <p>Awesome text about how incredible this product is! Awesome text about how incredible this product is!</p>
             <p>Awesome text about how incredible this product is! Awesome text about how incredible this product is!</p>
-
-
+         
           </div>
           <div class="col-sm">
            
@@ -88,6 +96,22 @@
           </div>
         </div>
       </div>
+
+      <!-- Added bootstrap element -->
+      <div id="sticky">
+        <div class="dropdown" style="float: right; margin: 1.33em;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Learn more
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Upcoming movies</a>
+            <a class="dropdown-item" href="#">Events</a>
+            <a class="dropdown-item" href="#">Community</a>
+          </div>
+        </div>
+      </div>
+      <!-- end bootstrap -->
+
 
       <!-- showtimes -->
       <div id="showtimes">
@@ -215,19 +239,7 @@
       </div>
       <!-- End About -->
       
-      <!-- Added bootstrap element -->
-      <div class="dropdown" style="float: right; margin: 1.33em;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Learn more
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Upcoming movies</a>
-          <a class="dropdown-item" href="#">Events</a>
-          <a class="dropdown-item" href="#">Community</a>
-        </div>
-      </div>
-      <!-- end -->
-
+    
       <!-- footer -->
       <div class="container my-5">
         <ul class="nav nav-inline">
